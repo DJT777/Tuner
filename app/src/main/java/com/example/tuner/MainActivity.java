@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         TextView text = (TextView) findViewById(R.id.textView1);
-                        text.setText("" + hz);
+                        text.setText("" + Math.round(hz * 100.0) / 100.0);
                         TextView note = (TextView) findViewById(R.id.textView);
                         note.setText("" + Note);
                         TextView pitch = (TextView) findViewById(R.id.textView2);
